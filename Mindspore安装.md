@@ -1,5 +1,6 @@
 **3/21/2024**  
   
+Ubuntu 18.04  
 MindSpore官网https://www.mindspore.cn/install/detail?path=install/r2.3/mindspore_cpu_install_source.md  
 如果已经安装了其他依赖，最好手动安装或者换个环境，不然很容易报错    
 自动安装脚本目前缺少部分包flex, bison, GNU autoconf, GNU automake, libtool   
