@@ -8,4 +8,4 @@ mindspore.ops.ReduceAll ：https://www.mindspore.cn/docs/zh-CN/r2.2/_modules/min
     
     
 # fmin    
-docs/api/api_python/ops/mindspore.ops.func_fmin.rst    
+[docs/api/api_python/ops/mindspore.ops.func_fmin.rst    ](https://gitee.com/mindspore/mindspore/blob/r2.2/docs/api/api_python/ops/mindspore.ops.func_fmax.rst)
