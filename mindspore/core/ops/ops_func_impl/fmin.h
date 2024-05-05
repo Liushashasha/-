@@ -1,5 +1,5 @@
 /**
- * Copyright 2022 Huawei Technologies Co., Ltd
+ * Copyright 2023 Huawei Technologies Co., Ltd
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,30 +14,23 @@
  * limitations under the License.
  */
 
-#ifndef MINDSPORE_CORE_OPS_FMIN_H_
-#define MINDSPORE_CORE_OPS_FMIN_H_
-#include <map>
-#include <memory>
-#include <string>
-#include <vector>
+#ifndef MINDSPORE_CORE_OPS_OPS_FUNC_IMPL_FMIN_H_
+#define MINDSPORE_CORE_OPS_OPS_FUNC_IMPL_FMIN_H_
 
-#include "mindapi/base/types.h"
-#include "ops/base_operator.h"
+#include <set>
+#include <vector>
+#include "ops/ops_func_impl/op_func_impl.h"
 
 namespace mindspore {
 namespace ops {
-constexpr auto kNameFmin = "Fmin";
-/// \brief Computes the minimum of input tensors element-wise.
-/// Refer to Python API @ref mindspore.ops.Fmin for more details.
-class MIND_API Fmin : public BaseOperator {
+/// \brief Implementation of InferShape and InferType functions for operator 'Fmin'.
+class MIND_API FminFuncImpl : public OpFuncImpl {
  public:
-  MIND_API_BASE_MEMBER(Fmin);
-  /// \brief Constructor.
-  Fmin() : BaseOperator(kNameFmin) { InitIOName({"x", "y"}, {"output"}); }
-  /// \brief Init.
-  void Init() const {}
+  BaseShapePtr InferShape(const PrimitivePtr &primitive, const std::vector<AbstractBasePtr> &input_args) const override;
+  TypePtr InferType(const PrimitivePtr &primitive, const std::vector<AbstractBasePtr> &input_args) const override;
 };
+
 }  // namespace ops
 }  // namespace mindspore
 
-#endif  // MINDSPORE_CORE_OPS_FMIN_H_
+#endif  // MINDSPORE_CORE_OPS_OPS_FUNC_IMPL_FMIN_H_
