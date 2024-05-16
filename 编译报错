@@ -1,0 +1,16 @@
+CMake Error at mindspore/core/CMakeLists.txt:149 (add_library):
+  Target "mindspore_core" links to target "mindspore::crypto" but the target
+  was not found.  Perhaps a find_package() call is missing for an IMPORTED
+  target, or an ALIAS target is missing?
+
+
+CMake Error at mindspore/ccsrc/CMakeLists.txt:479 (add_library):
+  Target "mindspore_backend" links to target "mindspore::ssl" but the target
+  was not found.  Perhaps a find_package() call is missing for an IMPORTED
+  target, or an ALIAS target is missing?
+
+
+CMake Error at mindspore/ccsrc/CMakeLists.txt:479 (add_library):
+  Target "mindspore_backend" links to target "mindspore::crypto" but the
+  target was not found.  Perhaps a find_package() call is missing for an
+  IMPORTED target, or an ALIAS target is missing?
