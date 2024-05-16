@@ -38,3 +38,9 @@ python -c "import mindspore;mindspore.set_context(device_target='CPU');mindspore
 
 ### 手动安装见链接
 https://www.mindspore.cn/install/detail?path=install/r2.3/mindspore_cpu_install_source.md#%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87-%E6%89%8B%E5%8A%A8
+
+
+
+
+        export LD_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu:$LD_LIBRARY_PATH
+export CMAKE_PREFIX_PATH=/usr/lib/x86_64-linux-gnu:$CMAKE_PREFIX_PATH
